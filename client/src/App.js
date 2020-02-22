@@ -28,6 +28,7 @@
 
 import React, { Component } from "react";
 import axios from 'axios'
+import PlayerCardList from "./components/PlayerCardList";
 
 class App extends Component {
   constructor(props) {
@@ -55,6 +56,7 @@ class App extends Component {
     return (
       <div>
         <h1>Women's World Cup</h1>
+          <PlayerCardList playerData={this.state.players} />
       </div>
     );
   }
